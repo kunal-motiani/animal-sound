@@ -1,10 +1,30 @@
 .App {
-  text-align: center;
+  display: grid;
+  /* flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; */
+  grid-template-columns: 400px 100px 100px 400px;
+  align-items: center;
+  grid-column-gap: 60px;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.button {
+  display: block;
+  height: 7vh;
+  width: 10vh;
+  background-color: royalblue;
+  border: 5px solid black;
+  font-family: BioRhyme, serif;
+  font-size: 4vh;
+  line-height: 1vh;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,15 +33,35 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.square {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 1vh;
   justify-content: center;
+  align-items: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: bold;
+  color: black;
+  font-size: 20vh;
+}
+
+.container-alphabets {
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  grid-row-gap: 20px;
+  grid-column-gap: 80px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px;
+  grid-row-gap: 20px;
+  grid-column-gap: 80px;
 }
 
 .App-link {
