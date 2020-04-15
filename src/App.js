@@ -13,9 +13,6 @@ function App() {
     if (animal === "Kingdom") {
       console.log("Do Nothing");
     } else {
-      // console.log("Alphabet Value : " + alphabetLower);
-      // console.log("animal.charAt(0) Value : " + animalAlphabet);
-      // console.log(animal.charAt(0) === alphabet);
       if (alphabetLower === animalAlphabet) {
         console.log("Play Sound");
         setIncorrectCombination(false);
