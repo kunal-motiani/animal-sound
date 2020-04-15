@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/animal-sound/static/css/main.8991813b.chunk.css",
+    "main.js": "/animal-sound/static/js/main.c6b62937.chunk.js",
+    "main.js.map": "/animal-sound/static/js/main.c6b62937.chunk.js.map",
+    "runtime-main.js": "/animal-sound/static/js/runtime-main.b514f703.js",
+    "runtime-main.js.map": "/animal-sound/static/js/runtime-main.b514f703.js.map",
+    "static/js/2.3b8ffeca.chunk.js": "/animal-sound/static/js/2.3b8ffeca.chunk.js",
+    "static/js/2.3b8ffeca.chunk.js.map": "/animal-sound/static/js/2.3b8ffeca.chunk.js.map",
+    "index.html": "/animal-sound/index.html",
+    "precache-manifest.23d485b9b41624de7ab4423f9f1e4fe3.js": "/animal-sound/precache-manifest.23d485b9b41624de7ab4423f9f1e4fe3.js",
+    "service-worker.js": "/animal-sound/service-worker.js",
+    "static/css/main.8991813b.chunk.css.map": "/animal-sound/static/css/main.8991813b.chunk.css.map",
+    "static/js/2.3b8ffeca.chunk.js.LICENSE.txt": "/animal-sound/static/js/2.3b8ffeca.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b514f703.js",
+    "static/js/2.3b8ffeca.chunk.js",
+    "static/css/main.8991813b.chunk.css",
+    "static/js/main.c6b62937.chunk.js"
+  ]
+}
