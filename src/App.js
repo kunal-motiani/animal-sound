@@ -7,25 +7,52 @@ function App() {
   let [alphabet, setAlphabet] = useState(``);
   let [incorrectCombination, setIncorrectCombination] = useState(false);
 
-  useEffect(() => {
-    let alphabetLower = alphabet.toLowerCase();
-    let animalAlphabet = animal.charAt(0);
-    if (animal === "Kingdom") {
+  const soundPlay = async (path) => {
+    let audio = new Audio(path);
+    try {
+      await audio.play();
+    } catch (err) {
+      alert(
+        "Sorry Cannot play audio. Either your network doesn't support it or you are not using modern browser."
+      );
+    }
+  };
+
+  const actions = () => {
+    if (!alphabet || animal === "Kingdom") {
+      if (incorrectCombination) {
+        setIncorrectCombination(false);
+      }
       console.log("Do Nothing");
     } else {
+      let alphabetLower = alphabet.toLowerCase();
+      let animalAlphabet = animal.charAt(0);
       if (alphabetLower === animalAlphabet) {
         console.log("Play Sound");
         setIncorrectCombination(false);
-        let audio = new Audio(`./animals/audio/${animal}.mp3`);
-        audio.play();
+        soundPlay(
+          `./animals/audio/${animal}.mp3`,
+          setTimeout(() => {
+            console.log("Reset state is called");
+            setAlphabet("");
+            setAnimal("Kingdom");
+          }, 3000)
+        );
       } else {
         console.log("Play Effect");
         setIncorrectCombination(true);
-        let audio = new Audio(`./animals/audio/buzzer.mp3`);
-        audio.play();
+        soundPlay(
+          `./animals/audio/buzzer.mp3`,
+          setTimeout(() => {
+            console.log("Reset state is called");
+            setAnimal("Kingdom");
+          }, 1000)
+        );
       }
     }
-  }, [animal, alphabet]);
+  };
+
+  useEffect(actions, [animal, alphabet]);
 
   const imageClick = (image) => {
     console.log("Image clicked : " + image.target.alt);
@@ -100,14 +127,14 @@ function App() {
         <div
           /* className="square" */
           style={{
-            gridColumn: "2",
+            gridColumnStart: "2",
             span: "2",
-            fontSize: "350px",
+            fontSize: "22rem",
             fontWeight: "normal",
             position: "absolute",
             zIndex: "2",
-            top: "50px",
-            left: "500px",
+            left: "35vw",
+            marginTop: "5vh",
           }}
         >
           X

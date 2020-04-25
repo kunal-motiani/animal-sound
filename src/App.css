@@ -3,15 +3,12 @@
   /* flex-direction: row;
   align-items: center;
   justify-content: space-evenly; */
-  grid-template-columns: 400px 100px 100px 400px;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 30% 15% 15% 40%;
   align-items: center;
-  grid-column-gap: 60px;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 .button {
@@ -25,12 +22,6 @@
   line-height: 1vh;
   text-transform: uppercase;
   cursor: pointer;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .square {
@@ -52,27 +43,12 @@
 
 .container-alphabets {
   display: grid;
-  grid-template-columns: 40px 40px 40px;
+  grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 20px;
-  grid-column-gap: 80px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 40px 40px 40px 40px;
+  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 20px;
-  grid-column-gap: 80px;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
