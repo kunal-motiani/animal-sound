@@ -1,32 +1,23 @@
 .App {
-  display: grid;
-  /* flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly; */
-  height: 100vh;
-  width: 100vw;
-  grid-template-columns: 30% 15% 15% 40%;
+  display: flex;
+  height: 100%;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
-  font-size: calc(10px + 2vmin);
 }
 
-.button {
-  display: block;
-  height: 7vh;
-  width: 10vh;
+.alphabets {
   background-color: white;
-  border: 5px solid black;
+  border: 1vh solid black;
   font-family: BioRhyme, serif;
-  font-size: 4vh;
-  line-height: 1vh;
-  text-transform: uppercase;
+  margin: 1vh;
   cursor: pointer;
+  font-size: 4vh;
 }
 
 .square {
   margin: auto;
-  padding: 10px;
+  padding: 2vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -35,20 +26,19 @@
   border-width: 1vh;
   justify-content: center;
   align-items: center;
-  font-size: calc(10px + 2vmin);
   font-weight: bold;
   color: black;
-  font-size: 20vh;
+  font-size: 5vh;
 }
 
 .container-alphabets {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 4vh;
 }
 
-.container {
+.container-images {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 20px;
+  grid-row-gap: 4vh;
 }

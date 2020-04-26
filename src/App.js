@@ -115,7 +115,7 @@ function App() {
         {alphabets.map((alphabet) => (
           <button
             key={alphabet}
-            className="button"
+            className="alphabets"
             onClick={alphabetClick}
             value={alphabet}
           >
@@ -129,12 +129,11 @@ function App() {
           style={{
             gridColumnStart: "2",
             span: "2",
-            fontSize: "22rem",
+            fontSize: "25rem",
             fontWeight: "normal",
             position: "absolute",
             zIndex: "2",
             left: "35vw",
-            marginTop: "5vh",
           }}
         >
           X
@@ -144,15 +143,15 @@ function App() {
       <div style={{ gridColumn: "2", position: "realtive", zIndex: "1" }}>
         <button className="square">{alphabet}</button>
       </div>
-      <div>
-        <img
-          title={animal}
-          alt={animal}
-          src={`./animals/images/${animal}.png`}
-          style={{ cursor: "pointer" }}
-        ></img>
-      </div>
-      <div className="container">
+
+      <img
+        title={animal}
+        alt={animal}
+        src={`./animals/images/${animal}.png`}
+        style={{ cursor: "pointer", width: "10vw" }}
+      ></img>
+
+      <div className="container-images">
         {images.map((image) => (
           <div key={image}>
             <img
@@ -164,7 +163,7 @@ function App() {
             ></img>
             <div
               style={{
-                fontSize: "15px",
+                fontSize: "1rem",
                 textAlign: "center",
                 color: "black",
               }}
