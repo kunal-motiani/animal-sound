@@ -148,7 +148,7 @@ function App() {
         title={animal}
         alt={animal}
         src={`./animals/images/${animal}.png`}
-        style={{ cursor: "pointer", width: "10vw" }}
+        style={{ cursor: "pointer", width: "20vw" }}
       ></img>
 
       <div className="container-images">
