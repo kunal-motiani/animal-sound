@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/animal-sound/static/css/main.97491db6.chunk.css",
-    "main.js": "/animal-sound/static/js/main.b43c709a.chunk.js",
-    "main.js.map": "/animal-sound/static/js/main.b43c709a.chunk.js.map",
+    "main.css": "/animal-sound/static/css/main.4bb5a0fe.chunk.css",
+    "main.js": "/animal-sound/static/js/main.e80ea5d0.chunk.js",
+    "main.js.map": "/animal-sound/static/js/main.e80ea5d0.chunk.js.map",
     "runtime-main.js": "/animal-sound/static/js/runtime-main.b514f703.js",
     "runtime-main.js.map": "/animal-sound/static/js/runtime-main.b514f703.js.map",
     "static/js/2.5543ec89.chunk.js": "/animal-sound/static/js/2.5543ec89.chunk.js",
     "static/js/2.5543ec89.chunk.js.map": "/animal-sound/static/js/2.5543ec89.chunk.js.map",
     "index.html": "/animal-sound/index.html",
-    "precache-manifest.4dfc73b2bf3eede8fe64f94cd3a1aa54.js": "/animal-sound/precache-manifest.4dfc73b2bf3eede8fe64f94cd3a1aa54.js",
+    "precache-manifest.345715a234087ca84ac2fb4503caa934.js": "/animal-sound/precache-manifest.345715a234087ca84ac2fb4503caa934.js",
     "service-worker.js": "/animal-sound/service-worker.js",
-    "static/css/main.97491db6.chunk.css.map": "/animal-sound/static/css/main.97491db6.chunk.css.map",
+    "static/css/main.4bb5a0fe.chunk.css.map": "/animal-sound/static/css/main.4bb5a0fe.chunk.css.map",
     "static/js/2.5543ec89.chunk.js.LICENSE.txt": "/animal-sound/static/js/2.5543ec89.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b514f703.js",
     "static/js/2.5543ec89.chunk.js",
-    "static/css/main.97491db6.chunk.css",
-    "static/js/main.b43c709a.chunk.js"
+    "static/css/main.4bb5a0fe.chunk.css",
+    "static/js/main.e80ea5d0.chunk.js"
   ]
 }
